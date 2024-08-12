@@ -57,7 +57,7 @@ const grupoE: Grupo = {
 };
 
 //mostrado por consola los grupos. Si hubiera podido definir bien los estilos css para los nombres, No hubiera sabido mostrarlos
-console.log(`%c${grupoA.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
+console.log(`%c${grupoA.name}`,estiloNombre,grupoA.year,grupoA.active, grupoA.gender);
 console.log(`%c${grupoB.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
-console.log(`%c${grupoC.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
-console.log(`%c${grupoD.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
+console.log(`%c${grupoC.name}`,estiloNombre,grupoC.year,grupoC.active, grupoC.gender);
+console.log(`%c${grupoD.name}`,estiloNombre,grupoD.year,grupoD.active, grupoD.gender);

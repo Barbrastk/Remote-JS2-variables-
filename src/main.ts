@@ -11,54 +11,53 @@ const clasica = "🎼 Clásica";
 //interfaces grupo
 
 interface Grupo {
-	nombre: string;
-	año: number;
-	activo: boolean;
-	género: string;
+	name: string;
+	year: number;
+	active: boolean;
+	gender: string;
 };
 
 //estilo nombre grupos. Esto no me sale. No se hacerlo
-const estiloNombre = "color: red; font-size: 18px; font-weight: bold; background-color: green";
+const estiloNombre = "font-size: 18px; font-weight: bold; background-color: green";
 
 //variables con objetos para cada grupo
 const grupoA: Grupo = {
-    nombre: "The Beatles", 
-	año: 1960,
-	activo: true,
-	género: popRock,
+    name: "The Beatles", 
+	year: 1960,
+	active: true,
+	gender: popRock,
 };
 
 const grupoB: Grupo = {
-    nombre: "Queen",
-	año: 1970,
-	activo: false,
-	género: rock,
+    name: "Queen",
+	year: 1970,
+	active: false,
+	gender: rock,
 };
 
 const grupoC: Grupo = {
-    nombre: "AC DC",
-	año: 1973,
-	activo: true,
-	género: hardRock,
+    name: "AC DC",
+	year: 1973,
+	active: true,
+	gender: hardRock,
 };
 
 const grupoD: Grupo = {
-    nombre: "Ludwig van Beethoven",
-	año: 1770,
-	activo: false,
-	género: clasica,
+    name: "Ludwig van Beethoven",
+	year: 1770,
+	active: false,
+	gender: clasica,
 };
 
 const grupoE: Grupo = {
-    nombre: "The Rolling Stones",
-	año: 1962,
-	activo: true,
-	género: rock,
+    name: "The Rolling Stones",
+	year: 1962,
+	active: true,
+	gender: rock,
 };
 
 //mostrado por consola los grupos. Si hubiera podido definir bien los estilos css para los nombres, No hubiera sabido mostrarlos
-console.log(grupoA);
-console.log(grupoB);
-console.log(grupoC);
-console.log(grupoD);
-console.log(grupoE);
+console.log(`%c${grupoA.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
+console.log(`%c${grupoB.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
+console.log(`%c${grupoC.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
+console.log(`%c${grupoD.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);

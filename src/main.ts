@@ -1,7 +1,7 @@
 
 
 
-//variables géneros con emoticonos
+//variables generos con emoticonos
 
 const popRock = "🎵 Pop Rock";
 const rock = "🎸 Rock";
@@ -17,7 +17,7 @@ interface Grupo {
 	gender: string;
 };
 
-//estilo nombre grupos. Esto no me sale. No se hacerlo
+//estilo nombre grupos
 const estiloNombre = "font-size: 18px; font-weight: bold; background-color: green";
 
 //variables con objetos para cada grupo
@@ -56,8 +56,14 @@ const grupoE: Grupo = {
 	gender: rock,
 };
 
-//mostrado por consola los grupos. Si hubiera podido definir bien los estilos css para los nombres, No hubiera sabido mostrarlos
-console.log(`%c${grupoA.name}`,estiloNombre,grupoA.year,grupoA.active, grupoA.gender);
-console.log(`%c${grupoB.name}`,estiloNombre,grupoB.year,grupoB.active, grupoB.gender);
-console.log(`%c${grupoC.name}`,estiloNombre,grupoC.year,grupoC.active, grupoC.gender);
-console.log(`%c${grupoD.name}`,estiloNombre,grupoD.year,grupoD.active, grupoD.gender);
+//mostrado por consola los grupos y estilo en el nombre
+console.log(`%c${grupoA.name}`,estiloNombre);
+console.log(grupoA.year, grupoA.active, grupoA.gender);
+console.log(`%c${grupoB.name}`,estiloNombre);
+console.log(grupoB.year, grupoB.active, grupoB.gender);
+console.log(`%c${grupoC.name}`,estiloNombre);
+console.log(grupoC.year, grupoC.active, grupoC.gender);
+console.log(`%c${grupoD.name}`,estiloNombre);
+console.log(grupoD.year, grupoD.active, grupoD.gender);
+console.log(`%c${grupoE.name}`, estiloNombre)
+console.log(grupoE.year, grupoE.active, grupoE.gender)
